@@ -1,0 +1,169 @@
+/* Desktop Styles - Media Query for screens 768px and above */
+@media (min-width: 768px) {
+  .app-container {
+    background-color: #f3f4f6;
+  }
+
+  /* Hide status bar on desktop */
+  .status-bar {
+    display: none;
+  }
+
+  /* Enhanced Header */
+  .header {
+    padding: 1.5rem 2rem;
+  }
+
+  .logo-icon {
+    inline-size: 2rem;
+    block-size: 2rem;
+  }
+
+  .header-title {
+    font-size: 1.5rem;
+  }
+
+  .sign-out-btn {
+    padding: 0.5rem 1rem;
+    background-color: #3b82f6;
+    color: white;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s;
+  }
+
+  .sign-out-btn:hover {
+    background-color: #2563eb;
+  }
+
+  /* Main Content Layout */
+  .main-content {
+    padding: 2rem;
+    max-inline-size: 72rem;
+    margin: 0 auto;
+  }
+
+  .content-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+  }
+
+  .left-column {
+    grid-column: span 1;
+  }
+
+  .right-column {
+    grid-column: span 2;
+  }
+
+  /* Enhanced Welcome Card */
+  .welcome-card {
+    padding: 1.5rem;
+  }
+
+  .welcome-title {
+    font-size: 1.25rem;
+    margin-block-end: 0.5rem;
+  }
+
+  .welcome-email {
+    font-size: 1rem;
+  }
+
+  /* Enhanced Create Note Button */
+  .create-note-btn {
+    padding: 1rem;
+    font-size: 1.125rem;
+  }
+
+  .create-icon {
+    inline-size: 1.5rem;
+    block-size: 1.5rem;
+  }
+
+  /* Enhanced Note Form */
+  .note-form {
+    padding: 1.5rem;
+  }
+
+  .form-title {
+    display: block;
+  }
+
+  .form-fields {
+    gap: 1rem;
+  }
+
+  .form-input,
+  .form-textarea {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+  }
+
+  .form-textarea {
+    min-block-size: 7.5rem;
+  }
+
+  .form-buttons {
+    gap: 0.75rem;
+  }
+
+  .save-btn,
+  .cancel-btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  /* Enhanced Notes Section */
+  .notes-title {
+    font-size: 1.25rem;
+    margin-block-end: 1.5rem;
+  }
+
+  .empty-state {
+    padding: 3rem;
+  }
+
+  .empty-icon svg {
+    inline-size: 5rem;
+    block-size: 5rem;
+  }
+
+  .empty-text {
+    font-size: 1.125rem;
+  }
+
+  .notes-list {
+    gap: 0.75rem;
+  }
+
+  .note-item {
+    padding: 1.5rem;
+    align-items: flex-start;
+    transition: box-shadow 0.2s;
+  }
+
+  .note-item:hover {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+
+  .note-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-block-end: 0.5rem;
+  }
+
+  .note-description {
+    display: block;
+    font-size: 1rem;
+  }
+
+  .delete-btn {
+    margin-inline-start: 1.5rem;
+  }
+
+  .delete-icon {
+    inline-size: 1.5rem;
+    block-size: 1.5rem;
+  }
+}
